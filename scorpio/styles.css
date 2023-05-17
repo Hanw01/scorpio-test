@@ -1,0 +1,176 @@
+body { background-color:#060702;
+    text-align: center;
+    
+}
+
+.navbar-brand { 
+font-family: "ubuntu";
+font-size: 2rem;
+font-weight: bold;
+color :#180df0;
+padding-bottom: 4.5; 
+}
+.nav-item {
+
+padding: 0 6px; 
+font-family: "montserrat";
+font-size: 1rem;
+
+}
+
+
+
+.block {
+position: relative;
+width:300px;
+height: 300px;
+border-radius: 50%;
+margin:20px auto;
+background: url(scorpi.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.glow::before,
+.glow::after{
+content: "";
+position: absolute;
+right: -5px;
+top: -5px;
+background: linear-gradient(
+    -45deg,
+    #ffe15a,
+    #f8bd47,
+    #006668,
+    #000c15,
+    #fdc94f
+ );
+ background-size: 600%;
+ border-radius: 50%;
+ height: calc(100% + 8px);
+ width: calc(100% + 8px);
+ z-index: -2;
+ animation: change 50s linear infinite ; 
+
+}
+@keyframes change{
+0%{
+    background-position: 0 0;
+}
+
+50%{
+    background-position: 400% 0;
+
+}
+100%{
+    background-position: 01 0;
+}
+}
+
+.glow::after {
+filter: blur(50px);
+opacity: .8;
+
+}
+
+h1 {
+color: #f5d95e;
+opacity: 0.5;
+}
+
+p {
+padding:50px 100px;
+color: #ffe15a;
+opacity: 0.5;
+
+}
+
+button {
+     
+        border: 3px solid;
+        border-radius: 20px;
+        background-color: rgb(5, 0, 8);
+        color: #f2e29a;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-color: rgb(125, 129, 9) 3px;
+        cursor: pointer ;
+        box-shadow: 0 0 5px rgb(68, 73, 1), 0 0 3px rgb(236, 216, 30), 0 0 6px rgb(182, 245, 191), 0 0 10px rgb(237, 250, 196);
+        animation: glowing 2s infinite;
+        text-decoration: none;
+      }
+      
+      
+       button:hover {
+        color:#cbc75e;
+        background-color: rgb(5, 1, 5) ;
+        filter: drop-shadow(0 0 10px #655d03) contrast(1) brightness(1);
+       
+      }
+      
+
+
+
+.foot-icon {
+padding:2px ;
+}
+
+.social-icon {
+margin:20px 10px;
+
+}
+
+.graph {
+position: relative;
+width:200px;
+height: 200px;
+border-radius: 50%;
+margin:20px auto;
+background: url(graph.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+.ring::before,
+.ring::after{
+content: "";
+position: absolute;
+right: -5px;
+top: -5px;
+background: linear-gradient(
+  -45deg,
+    #ffe15a,
+    #f8bd47,
+    #006668,
+    #000c15,
+    #fdc94f
+);
+background-size: 500%;
+border-radius: 50%;
+height: calc(100% + 8px);
+width: calc(100% + 8px);
+z-index: -2;
+animation: change 50s linear infinite ; 
+
+}
+@keyframes change{
+0%{
+  background-position: 0 0;
+}
+
+50%{
+  background-position: 400% 0;
+
+}
+100%{
+  background-position: 01 0;
+}
+}
+
+.ring::after {
+filter: blur(50px);
+opacity: .8;
+}
